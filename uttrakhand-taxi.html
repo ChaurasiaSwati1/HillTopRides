@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./plugins/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" href="./plugins/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="./plugins/owl-carousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        >
+        <link rel="manifest" href="./assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>HillTop Rides - Easy & Convenient Transportation</title>
+    </head>
+    <body>
+        <!-- Header Component -->
+        <header class="nav-component bg-white sticky-top"></header>
+        <!-- Main Body -->
+        <div id="main-body">
+            <section class="mt-80" id="uk_taxi_bg">
+                <div class="container-xl py-sm-5 py-4 h-100">
+                    <div class="row">
+                        <div class="col-xl-5 col-md-6 col-12 offset-xl-7 offset-md-6 offset-0">
+                            <div class="card bg-secondary border-0 rounded-0">
+                                <div class="card-body p-4">
+                                    <p class="font-18 text-center fw-600 mb-3 text-uppercase">Drop Your Message</p>
+                                    <hr class="text-white opacity-1 my-md-2 my-3">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <label for="to" class="form-label font-14 mb-1">
+                                                        To
+                                                        <star class="text-danger fw-bold">*</star>
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control rounded-0"
+                                                        id="to"
+                                                        placeholder="To"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <label for="car_type" class="form-label font-14 mb-1">
+                                                        Select Car Type
+                                                        <star class="text-danger fw-bold">*</star>
+                                                    </label>
+                                                    <select class="form-select rounded-0" id="car_type">
+                                                        <option>Swift Dzire</option>
+                                                        <option>Toyota Innova</option>
+                                                        <option>Toyota Innova Crysta</option>
+                                                        <option>Tempo Traveller</option>
+                                                        <option>Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <label for="dep_date" class="form-label font-14 mb-1">
+                                                        Departure Date
+                                                        <star class="text-danger fw-bold">*</star>
+                                                    </label>
+                                                    <input
+                                                        type="date"
+                                                        class="form-control rounded-0"
+                                                        id="dep_date"
+                                                        placeholder="Departure Date"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <label for="ret_date" class="form-label font-14 mb-1">
+                                                        Return Date
+                                                        <star class="text-danger fw-bold">*</star>
+                                                    </label>
+                                                    <input
+                                                        type="date"
+                                                        class="form-control rounded-0"
+                                                        id="ret_date"
+                                                        placeholder="Return Date"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <label for="num_per" class="form-label font-14 mb-1">
+                                                        Number Of Persons
+                                                        <star class="text-danger fw-bold">*</star>
+                                                    </label>
+                                                    <select class="form-select rounded-0" id="num_per">
+                                                        <option>01</option>
+                                                        <option>02</option>
+                                                        <option>03</option>
+                                                        <option>04</option>
+                                                        <option>05</option>
+                                                        <option>06</option>
+                                                        <option>07</option>
+                                                        <option>08</option>
+                                                        <option>09</option>
+                                                        <option>10</option>
+                                                        <option>More</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <label for="pic_time" class="form-label font-14 mb-1">
+                                                        Pickup Times
+                                                        <star class="text-danger fw-bold">*</star>
+                                                    </label>
+                                                    <input
+                                                        type="time"
+                                                        class="form-control rounded-0"
+                                                        id="pic_time"
+                                                        placeholder="Pickup Times"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <input
+                                                        type="text"
+                                                        class="form-control rounded-0"
+                                                        id="name"
+                                                        placeholder="Enter Name"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <input
+                                                        type="email"
+                                                        class="form-control rounded-0"
+                                                        id="email"
+                                                        placeholder="Enter Email"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <input
+                                                        type="number"
+                                                        class="form-control rounded-0"
+                                                        id="mob_no"
+                                                        placeholder="Enter Mobile No."
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mb-2">
+                                                    <input
+                                                        type="text"
+                                                        class="form-control rounded-0"
+                                                        id="message"
+                                                        placeholder="Message"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group mt-2">
+                                                    <input
+                                                        type="submit"
+                                                        class="btn btn-primary w-100 rounded-0"
+                                                        id="message"
+                                                        value="Submit"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-lg-3 taxi_uk">
+                <div class="container-xl py-4 py-md-5">
+                    <h4 class="font-28 fw-bold mb-4 mb-md-5 pb-2 heading_brdr">Taxi In Uttarakhand</h4>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-12 mb-4 mb-lg-0 text-center">
+                            <img src="./assets/images/taxi_in_uttrakhand.jpg" alt="Hill Top Rides" class="w-100">
+                        </div>
+                        <div class="col-lg-7 col-12">
+                            <p class="font-16 fw-400 text-justify">Uttarakhand is one of the most visited tourist destinations in India, renowned for its stunning landscapes, rich culture, and sacred pilgrimage sites. Thousands of tourists flock here each year with family and friends to explore its captivating beauty and serene environment. From holy sites like Badrinath, Kedarnath, Gangotri, and Yamunotri, to thrilling adventures on the Ganges River, Uttarakhand offers something for everyone. It’s not only a spiritual haven but also a hub for adventure lovers.</p>
+                            <p class="font-16 fw-400 text-justify">For a hassle-free journey in Uttarakhand, HillTop Rides offers the ideal local taxi service. Whether you're with family or friends, their taxis provide comfortable and luxurious travel, allowing you to explore the region's beauty with ease. HillTop Rides gives you convenient access to activities like bungee jumping, rafting, wildlife tours, and more, ensuring a safe and reliable experience as one of Uttarakhand’s top taxi providers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-lg-3 bg-light">
+                <div class="container-xl py-4 py-md-5">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <h4 class="font-28 fw-bold mb-lg-5 mb-4 pb-2 heading_brdr">Book A Taxi In 4 Easy Steps</h4>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12 mb-4 mb-lg-0 order-1 order-lg-0">
+                            <div class="d-flex align-items-center mb-lg-4 mb-3">
+                                <div class="card me-3 py-2 text-center num_card">
+                                    <p class="font-42 fw-500 mb-0">01</p>
+                                </div>
+                                <div>
+                                    <p class="font-18 text-uppercase mb-1 fw-600">Choose the trip type</p>
+                                    <p class="font-16 mb-0 text-capitalize">Intercity, Local or Airport Transfer</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="card me-3 py-2 text-center num_card">
+                                    <p class="font-42 fw-500 mb-0">02</p>
+                                </div>
+                                <div>
+                                    <p class="font-18 text-uppercase mb-1 fw-600">Enter your trip details</p>
+                                    <p class="font-16 mb-0 text-capitalize">Date, Time and your Itirary</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-12 text-center mb-4 mb-lg-0 order-lg-1 order-0">
+                            <img
+                                src="./assets/images/location_taxi.png"
+                                alt="Location Taxi"
+                                class="img-fluid loc_taxi"
+                                height="180px"
+                            >
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12 mb-4 mb-lg-0 order-3">
+                            <div class="d-flex align-items-center mb-lg-4 mb-3">
+                                <div class="card me-3 py-2 text-center num_card">
+                                    <p class="font-42 fw-500 mb-0">03</p>
+                                </div>
+                                <div>
+                                    <p class="font-18 text-uppercase mb-1 fw-600">Select a Car</p>
+                                    <p class="font-16 mb-0 text-capitalize text-wrap">From hatchbacks sedans, Innovas, luxury car and tempo travellers</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="card me-3 py-2 text-center num_card">
+                                    <p class="font-42 fw-500 mb-0">04</p>
+                                </div>
+                                <div>
+                                    <p class="font-18 text-uppercase mb-1 fw-600">Pay before or after trip</p>
+                                    <p class="font-16 mb-0 text-capitalize text-wrap">using your card, cash or e-wallets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-lg-3 uk_main_bg">
+                <div class="container-xl py-4 py-md-5">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12">
+                            <h4 class="font-28 fw-bold mb-lg-5 mb-4 text-white pb-2 heading_brdr">Uttarakhand Taxi Packages</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4 mb-md-0">
+                            <div class="card rounded-0 border-0">
+                                <div class="card-body p-2">
+                                    <img
+                                        src="./assets/images/chardham.jpg"
+                                        alt="Chardham"
+                                        class="w-100"
+                                        height="200px"
+                                    >
+                                </div>
+                                <div class="card-footer">
+                                    <p class="font-20 fw-bold text-primary mb-3 text-center">Uttrakhand to Chardham</p>
+                                    <button class="btn btn-primary rounded-0 mx-auto d-block">Book Your Taxi</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4 mb-md-0">
+                            <div class="card rounded-0 border-0">
+                                <div class="card-body p-2">
+                                    <img
+                                        src="./assets/images/dodham.jpg"
+                                        alt="Chardham"
+                                        class="w-100"
+                                        height="200px"
+                                    >
+                                </div>
+                                <div class="card-footer">
+                                    <p class="font-20 fw-bold text-primary mb-3 text-center">Uttrakhand to Dodham</p>
+                                    <button class="btn btn-primary rounded-0 mx-auto d-block">Book Your Taxi</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4 mb-md-0">
+                            <div class="card rounded-0 border-0">
+                                <div class="card-body p-2">
+                                    <img
+                                        src="./assets/images/kumbh.jpg"
+                                        alt="Kumbh"
+                                        class="w-100"
+                                        height="200px"
+                                    >
+                                </div>
+                                <div class="card-footer">
+                                    <p class="font-20 fw-bold text-primary mb-3 text-center">Uttrakhand to Kumbh Mela</p>
+                                    <button class="btn btn-primary rounded-0 mx-auto d-block">Book Your Taxi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-lg-3">
+                <div class="container-xl py-4 py-md-5">
+                    <div class="row align-items-center mb-3">
+                        <div class="col-12">
+                            <h4 class="font-28 fw-bold mb-4 pb-2 heading_brdr ms-0">Your Trusted Taxi Service in Uttarakhand</h4>
+                        </div>
+                        <div class="col-12">
+                            <p class="font-16 fw-400">
+                                <b>Unmatched Local Expertise :-</b>
+                                We are not just another taxi service. At Hill Top Rides, our drivers are highly experienced and knowledgeable about the diverse landscapes of Uttarakhand. Whether it's navigating the narrow mountain roads or guiding you to hidden gems, you’re in safe hands.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Safety First :-</b>
+                                Our fleet of well-maintained vehicles is equipped with advanced safety features, ensuring a secure and stress-free ride through the mountainous terrains of Uttarakhand. Your safety is our top priority.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Comfort & Convenience :-</b>
+                                Travel in comfort with our modern, clean, and air-conditioned vehicles. Whether you're traveling solo, with family, or a large group, we have the right vehicle to meet your needs.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Affordable & Transparent Pricing :-</b>
+                                At Hill Top Rides, we believe in providing value for money. Our taxi services are competitively priced, with no hidden charges. Enjoy transparent and hassle-free billing, so you can focus on enjoying your trip.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Flexible Booking Options :-</b>
+                                We offer flexible booking options to suit your travel needs. From short trips to long-distance travel across Uttarakhand, our service is available 24/7, ensuring you always have a ride when you need one.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Environmentally Conscious :-</b>
+                                Hill Top Rides is committed to sustainable tourism in Uttarakhand. We minimize our carbon footprint by maintaining fuel-efficient vehicles, helping to preserve the natural beauty of the region.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-lg-5 mb-4">
+                        <div class="col-12">
+                            <h4 class="font-24 fw-bold mb-4 pb-2 heading_brdr ms-0">Explore Uttarakhand with Us!</h4>
+                        </div>
+                        <div class="col-12">
+                            <p class="font-16 fw-400">Uttarakhand is a land of breathtaking beauty and spiritual tranquility, and at Hill Top Rides, we are passionate about showcasing the best it has to offer. From the spiritual hubs of Haridwar and Rishikesh to the scenic spots of Mussoorie, Nainital, and beyond – let us take you on an unforgettable journey.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-12">
+                            <h4 class="font-28 fw-bold mb-4 pb-2 heading_brdr ms-0">Online Taxi Booking in Uttarakhand with Hill Top Rides</h4>
+                        </div>
+                        <div class="col-12">
+                            <p class="font-16 fw-400">
+                                Planning a trip to the beautiful state of Uttarakhand? Look no further! With Hill Top Rides, you can now book taxis online, making your travel experience smoother, more convenient, and stress-free.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Instant Bookings at Your Fingertips :-</b>
+                                Say goodbye to the hassle of finding a taxi on the go! With our easy-to-use online booking platform, you can schedule your ride in advance with just a few clicks. Whether you’re traveling to Dehradun, Rishikesh, Nainital, or the Char Dham circuit, booking your ride has never been easier.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>24/7 Availability :-</b>
+                                Hill Top Rides is available around the clock. Whether you need an early morning pickup, a late-night ride, or a full-day rental for sightseeing, we’ve got you covered. Just book online and we’ll handle the rest.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Flexible Ride Options :-</b>
+                                From economy cars for solo travelers to spacious SUVs for families and groups, we offer a variety of vehicles to suit every traveler's needs. You can select the car that best fits your journey, ensuring comfort and convenience throughout.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Transparent Pricing :-</b>
+                                Our online booking system provides upfront pricing with no hidden costs. You’ll know exactly what you’re paying for before confirming your ride. Hill Top Rides guarantees affordable fares that match your budget.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Easy Payment Options :-</b>
+                                Book now, pay easily! We accept a variety of payment methods, including credit/debit cards, UPI, and other digital wallets. Our secure payment gateway ensures a safe transaction, so you can focus on your trip.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Real-Time Updates :-</b>
+                                Stay informed about your ride status with real-time updates. Once your booking is confirmed, you’ll receive instant notifications about your driver's arrival time, vehicle details, and other necessary information to ensure a seamless experience.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Experienced Local Drivers :-</b>
+                                At Hill Top Rides, we pride ourselves on working with professional, experienced drivers who know Uttarakhand’s routes like the back of their hands. Whether you’re on a spiritual journey or an adventure trip, our drivers ensure you reach your destination safely and on time.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Customized Travel Plans :-</b>
+                                Traveling to multiple destinations in Uttarakhand? No problem! Hill Top Rides offers customizable itineraries that cater to your specific travel requirements. Just mention your stops during the booking process, and we’ll take care of the rest.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-12">
+                            <h4 class="font-24 fw-bold mb-4 pb-2 heading_brdr ms-0">How to Book Your Taxi Online with Hill Top Rides?</h4>
+                        </div>
+                        <div class="col-12">
+                            <p class="font-16 fw-400">
+                                Booking a taxi online with Hill Top Rides is simple and fast:
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Visit Our Website or App :-</b>
+                                Head over to our user-friendly website or download our mobile app.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Select Your Pickup Location and Destination :-</b>
+                                Enter your pickup point and desired destination.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Choose Your Vehicle :-</b>
+                                Pick a vehicle that suits your travel needs and preferences.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Confirm Your Ride :-</b>
+                                Review the fare and confirm your booking. You’ll receive instant confirmation with driver details.
+                            </p>
+                            <p class="font-16 fw-400">
+                                <b>Sit Back and Relax :-</b>
+                                Your driver will arrive at your pickup location at the scheduled time, ready to take you on your journey!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <h4 class="font-24 fw-bold mb-4 pb-2 heading_brdr ms-0">Explore Uttarakhand Hassle-Free with Hill Top Rides</h4>
+                        </div>
+                        <div class="col-12">
+                            <p class="font-16 fw-400">With Hill Top Rides, your travel plans in Uttarakhand are just a few clicks away. Whether you're traveling to the tranquil lakes of Nainital, the bustling streets of Dehradun, or the peaceful mountains of Kedarnath and Badrinath, our online taxi booking service ensures you get there with ease and comfort.</p>
+                            <p class="font-16 fw-400">
+                                Book your taxi online today with Hill Top Rides and experience the beauty of Uttarakhand like never before!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer Component -->
+        <footer class="footer-component"></footer>
+    </body>
+    <script src="./plugins/bootstrap/js/popper.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="./plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./plugins/aos/js/aos.js"></script>
+    <script src="./plugins/font-awesome/all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</html>
