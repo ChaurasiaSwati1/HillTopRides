@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+:root {
+  --primary-color: #03384f;
+  --secondary-color: #fed343;
+  --secondary-light-color: #f4e3ac;
+}
+@media only screen and (max-width: 767.9px) {
+  html {
+    font-size: 75%;
+  }
+}
+.bg-light {
+  background-color: #f0efef !important;
+}
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+.bg-secondary-light {
+  background-color: var(--secondary-light-color) !important;
+}
+.bg-light-200 {
+  background-color: #f0f3f5 !important;
+}
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+.btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 0;
+  font-weight: 500;
+}
+.font-10 {
+  font-size: 10px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-13 {
+  font-size: 13px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-28 {
+  font-size: 28px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-42 {
+  font-size: 42px;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-bold {
+  font-weight: 700 !important;
+}
+.text-justify {
+  text-align: justify;
+}
+.nav-component {
+  box-shadow: 0 1px 8px #a2a0a0;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+}
+div#main-body {
+  margin-top: 80px;
+  min-height: 100vh;
+  width: 100%;
+}
+.nav-item,
+.nav-link {
+  position: relative;
+  z-index: 2; /* Text (nav-link) should have a higher z-index */
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.lh-2 {
+  line-height: 2;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0%; /* Initial width is 0 */
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+  transition: width 0.5s ease;
+  z-index: 1;
+}
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: calc(100% - 34px);
+  font-weight: 600;
+}
+.nav-item:hover .nav-link,
+.nav-item.active .nav-link {
+  color: var(--secondary-color) !important;
+}
+footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-color: var(--primary-color);
+  background-blend-mode: color-burn;
+}
+.footer-card {
+  background: none;
+  border: 1px dashed var(--secondary-color);
+  border-radius: 2px;
+  padding: 12px 16px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #cbe9f7af;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #254f6193;
+}
+.homeBanner .carousel-inner,
+.homeBanner .carousel-item,
+.homeBanner .carousel-inner .carousel-item > img {
+  height: 420px;
+}
+.homeBanner .carousel-inner .carousel-item img {
+  object-position: bottom;
+  object-fit: cover;
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.rounded-12 {
+  border-radius: 12px;
+}
+.shadow {
+  box-shadow: 0 1px 12px #a2a0a0 !important;
+}
+.object-cover {
+  object-fit: cover;
+}
+.border-bottom-dashed {
+  border-bottom: 2px dashed var(--primary-color);
+}
+.bdr-btm {
+  position: relative;
+  overflow: hidden;
+}
+.bdr-btm::after {
+  content: "";
+  height: 1px;
+  border-bottom: 4px dashed #fdd965d8;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+.scale-2 {
+  transition: all 0.3s ease;
+}
+.scale-2:hover {
+  scale: 1.02;
+}
+.travel-card .icon {
+  display: block;
+  width: 100%;
+  transition: all 1s ease-in;
+}
+.activity-card img {
+  display: block;
+  transition: all 1s ease-in;
+}
+.activity-card:hover,
+.travel-card:hover {
+  scale: 1.1;
+  transition: all 0.5s ease-in;
+}
+.activity-card:hover img,
+.travel-card:hover .icon {
+  animation: vibrate 1s infinite;
+  scale: 1.2;
+}
+@keyframes vibrate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+button {
+  position: relative;
+  animation: moveUp 4s infinite;
+}
+button:hover {
+  scale: 1.05;
+  transition: all 0.5s ease-in;
+}
+
+@keyframes moveUp {
+  0%,
+  20% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-2px); /* Move up by 4px */
+  }
+  80%,
+  100% {
+    transform: translateY(0); /* Return to start position */
+  }
+}
+
+.owl-carousel .owl-item {
+  height: auto;
+}
+.selling-carousel .owl-carousel .item .card-body {
+  height: 220px;
+}
+.selling-carousel .owl-carousel .item img {
+  object-position: bottom;
+  object-fit: cover;
+  height: 220px;
+}
+.carousel-inner .item .carousel-caption {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #000000a3;
+}
+.destination-carousel .owl-carousel .owl-item .destination_img {
+  max-height: 280px;
+  min-height: 280px;
+  object-fit: cover;
+  height: 100%;
+}
+p.text-ellipsis-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-wrap: wrap;
+  /* display: flex; */
+  white-space: nowrap;
+  width: 110px;
+}
+.sticky-top {
+  z-index: 99;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #03384f6e;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+}
+.sidebar.active {
+  left: 0;
+}
+.border-white {
+  border: 1px solid #ffffff;
+}
+.sidebar .sidebar-menu {
+  width: 300px;
+  background: var(--primary-color);
+  height: 100%;
+}
+.sidebar .sidebar-menu .menu_list {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.sideClose {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 35px;
+}
+.sidebar .sidebar-menu .nav-item:hover::after,
+.sidebar .sidebar-menu .nav-item.active::after {
+  width: 100%;
+  font-weight: 600;
+}
+.activity-card img {
+  min-height: 50px;
+  max-height: 60px;
+  width: auto;
+}
+.contact-banner {
+  background: url("../images/chardham-yatra-2022.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+#carouselBanner .carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+#carouselBanner .carousel-item::after {
+  content: "";
+  position: absolute;
+  min-height: 180px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #00000078;
+  z-index: 1;
+}
+#carouselBanner .carousel-caption {
+  z-index: 3;
+}
+.breadcrumb-card {
+  border-left: 4px solid var(--secondary-color);
+  background: #fed243a9;
+}
+.heading_brdr {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.heading_brdr::after {
+  position: absolute;
+  content: "";
+  width: 30px; /* Initial width */
+  height: 4px;
+  background: var(--secondary-color);
+  bottom: -4px;
+  border-radius: 4px 4px 0 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: width 2s ease;
+}
+.heading_brdr.ms-0::after {
+  margin-left: 0;
+}
+section:hover .heading_brdr::after {
+  width: 120px;
+}
+.map #map {
+  height: 280px;
+}
+#uk_taxi_bg {
+  background: url(../images/uk_taxi_bg.png) no-repeat;
+  min-height: calc(100vh - 80px);
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+}
+.uk_main_bg {
+  background: url(../images/car_drive.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+.opacity-1 {
+  opacity: 1 !important;
+}
+input.btn-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color);
+}
+.num_card {
+  min-width: 81px;
+  height: 81px;
+}
+.loc_taxi {
+  max-height: 240px;
+}
+.carouselDestination .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  min-height: 400px;
+}
+.carouselDestination .carousel-control-prev,
+.carouselDestination .carousel-control-next {
+  width: 32px;
+  height: 32px;
+  top: 46%;
+}
+.carouselDestination .owl-carousel .owl-nav button.owl-next,
+.carouselDestination .owl-carousel .owl-nav button.owl-prev {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #ffffffa1;
+  color: #03384fbb;
+  border-radius: 50%;
+}
+.carouselDestination .owl-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.other_package {
+  background: url(../images/garden-pink-img.jpg) no-repeat center;
+  height: 140px;
+}
+.other_package .card-body {
+  background: #03384fa1;
+  height: 80px;
+}
+.bdr-btm-dashed .text-hover-secondary,
+.text-hover-secondary {
+  color: #212529;
+  font-weight: 400;
+  transition: all 0.25s ease-in;
+}
+.bdr-btm-dashed:hover .text-hover-secondary,
+.text-hover-secondary:hover {
+  color: var(--secondary-color);
+  font-weight: 500;
+  padding-left: 8px;
+}
+.bdr-btm-dashed {
+  position: relative;
+}
+.bdr-btm-dashed::after {
+  content: "";
+  height: 1px;
+  border-bottom: 1px dashed #03384f62;
+  margin-top: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.chardham-banner {
+  background: url(../images/chardham_banner.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+}
+.chardham_img {
+  min-height: 120px;
+  max-height: 120px;
+}
+.chardham_card .badge {
+  margin: 0;
+  left: 0px;
+  top: 70%;
+  border-radius: 0 10px 10px 0;
+}
+table tr th,
+table tr td {
+  font-size: 13px;
+}
+.chardham_yatra_card img {
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  object-position: center;
+  height: 220px;
+  width: 100%;
+}
+.CharDhamModal .modal-content {
+  border-bottom: 8px solid var(--secondary-color);
+}
+.CharDhamModal .btn_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  padding: 4px;
+  background: var(--secondary-color);
+  border-radius: 0;
+  border: 0;
+  height: 32px;
+  width: 32px;
+  color: var(--primary-color);
+  animation: none;
+  scale: 1;
+}
+@media screen and (max-width: 1199px) {
+  .font-16 {
+    font-size: 14px;
+  }
+  .font-18,
+  .font-20 {
+    font-size: 16px;
+  }
+  .font-24 {
+    font-size: 20px;
+  }
+  .font-28,
+  .font-30 {
+    font-size: 24px;
+  }
+  .font-32 {
+    font-size: 26px;
+  }
+  .font-42 {
+    font-size: 36px;
+  }
+  .num_card {
+    min-width: 72px;
+    height: 72px;
+  }
+  .container-xl {
+    padding: 0 24px;
+  }
+  .uk_main_bg .card-body img {
+    height: 160px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .font-24 {
+    font-size: 18px;
+  }
+  .font-18,
+  .font-16,
+  .font-20,
+  .btn {
+    font-size: 14px;
+  }
+  .font-28,
+  .font-30,
+  .font-32 {
+    font-size: 22px;
+  }
+  .chardham-banner {
+    background: url(../images/chardham_tour_img.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .uk_main_bg .card-body img {
+    height: 140px;
+  }
+  .taxi_uk img {
+    height: 240px;
+    width: auto !important;
+  }
+  .heading_brdr::after {
+    width: 30px;
+  }
+  section:hover .heading_brdr::after {
+    width: 80px;
+  }
+  .carouselDestination .carousel-item img {
+    max-height: 320px;
+    min-height: 320px;
+  }
+  .card.travel-card {
+    height: 145px;
+  }
+  .card.travel-card .card-body {
+    display: block;
+    align-content: center;
+  }
+  .map #map ,
+  .map #map iframe {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .selling-carousel .owl-carousel .item .card-body,
+  .selling-carousel .owl-carousel .item img {
+    height: 200px;
+  }
+  .font-42 {
+    font-size: 30px;
+  }
+  .num_card {
+    min-width: 66px;
+    height: 66px;
+  }
+  .heading_brdr::after,
+  section:hover .heading_brdr::after {
+    width: 60px;
+  }
+  .font-28,
+  .font-30,
+  .font-32 {
+    font-size: 20px;
+  }
+  .breadcrumb-card.w-75 {
+    width: 100% !important;
+  }
+  .carouselDestination .carousel-item img,
+  .about_img {
+    max-height: 240px;
+    min-height: 240px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .font-14 {
+    font-size: 12px;
+  }
+  .nav-component {
+    height: 70px;
+  }
+  .font-42 {
+    font-size: 24px;
+  }
+  .num_card {
+    min-width: 58px;
+    height: 58px;
+  }
+  .font-24 {
+    font-size: 16px;
+  }
+  .font-28,
+  .font-30,
+  .font-32 {
+    font-size: 18px;
+  }
+}
+/*start*/
